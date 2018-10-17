@@ -1,0 +1,54 @@
+{include file="public/cn/cn_header" /}
+{include file="public/cn/cn_lian_xwm_head" /}
+<link type="text/css" href="/static/www/css/lian_xwm/lian_xwm.css" rel="stylesheet">
+<div>
+    <div class="wechat_bj">
+        <div class="wechat">
+            <img class="img_pic" src="__STATIC__/www/img/lian_xwm/we.png">
+        </div>
+        <div class="wechat_text">
+            <p>微信扫描左侧二维码添加官方微信</p>
+            <p>邮箱：support@ibkfo.cn </p>
+            <p>地址：上海市浦东新区银城中路501号上海中心大厦3104室</p>
+        </div>
+    </div>
+    <div class="login_text">
+        <p>您也可以留下手机号，</p>
+        <p>工作人员会及时与您联系!</p>
+        <p>我们将以邮件的形式定期为您发送</p>
+       <p>迪拜最新房源资讯</p>
+    </div>
+    <form>
+        <div class="name">
+            <input type="text" id="lx_name" placeholder=" 姓名">
+        </div>
+        <div class="email">
+            <input type="text" id="lx_email"  placeholder=" 邮箱">
+        </div>
+        <div class="tel">
+            <div class="select">
+                <select id="lx_county_daima">
+                    <option > 国家代码</option>
+                    <option value="86">+86</option>
+                    <option value="62">+62</option>
+                    <option value="853">+853</option>
+                    <option value="60">+60</option>
+                    <option value="64">+64</option>
+                    <option value="63">+63</option>
+                    <option value="65">+65</option>
+                    <option value="82">+82</option>
+                    <option value="66">+66</option>
+                    <option value="84">+84</option>
+                </select>
+            </div>
+            <div class="input">
+                <input type="text" id="lx_phone" placeholder=" 联系电话">
+            </div>
+            <input type="hidden" id="lx_language"  value="cn">
+        </div>
+        <div class="submit">
+            <input type="button" id="lian_xwm" value="提交" />
+        </div>
+    </form>
+</div>
+{include file="public/cn/cn_foot_2" /}

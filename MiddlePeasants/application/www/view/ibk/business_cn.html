@@ -1,0 +1,52 @@
+{include file="public/cn/cn_header" /}
+{include file="public/cn/cn_head" /}
+<link type="text/css" href="/static/www/css/ibk/business.css" rel="stylesheet">
+<!--<div id="ibk_div_menu_text_bj" class="ibk_div_menu_text_bj">-->
+    <!--<img class="ibk_img_menu_text_bj" src="__STATIC__/www/img/menu_text_short_bj.png">-->
+<!--</div>-->
+<div>
+    <!--标题-->
+    <div class="title_div">
+        <img class="title_img" src="__STATIC__/www/img/ibk/business_title.png">
+    </div>
+    {volist name="list" id="vo"}
+        {if $i%2 != 0}
+            <!--左上图片-->
+            <div class="left_pic_bj_div">
+                <img class="img_pic" src="__STATIC__/www/img/ibk/business/left_pic_bj.png">
+            </div>
+            <div class="left_pic_div">
+                <img class="left_pic_img" src="{$imgpath}{$vo.pic}">
+            </div>
+            <!--右上文字说明标题-->
+            <div class="right_text_title">
+                <h1>{if $vo.order < 10}0{$vo.order}{else /}{$vo.order}{/if}</h1>
+                <span>{$vo.title}</span>
+            </div>
+            <!--右上文字说明内容-->
+            <div class="right_text_content">
+                <span>{$vo.content}</span>
+            </div>
+        {else /}
+            <!--左下文字说明标题-->
+            <div class="left_text_title">
+                <h1>{if $vo.order < 10}0{$vo.order}{else /}{$vo.order}{/if}</h1>
+                <span>{$vo.title}</span>
+            </div>
+            <!--左下文字说明内容-->
+            <div class="left_text_content">
+                <span>{$vo.content}</span>
+            </div>
+            <!--右下图片-->
+            <div class="right_pic_bj_div">
+                <img class="right_pic_img" src="__STATIC__/www/img/ibk/business/right_pic_bj.png">
+            </div>
+            <div class="right_pic_div">
+                <img class="right_pic_img" src="{$imgpath}{$vo.pic}">
+            </div>
+        {/if}
+    {/volist}
+    <!--分页-->
+    <div class="page">{$list->render()}</div>
+</div>
+{include file="public/cn/cn_foot_2" /}

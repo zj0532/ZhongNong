@@ -1,0 +1,210 @@
+{include file="public/ar/ar_header" /}
+{include file="public/ar/ar_head" /}
+{include file="public/ar/ar_huge_screen" /}
+<div class="">
+  <div class="index_guanyu_titile" id="maodian_guanyu">
+    <br>
+    <h2>عن Emaar</h2>
+    <br>
+    <br>
+  </div>
+  <div class="row" style="position: relative;">
+    <div class="col-md-5">
+      <img src="/static/www/img/video.jpg" alt="" style="width:100%">
+    </div>
+    <div class="col-md-7">
+      <div class="col-md-12" style="font-size: 16px;line-height: 31px;">
+        العقاراتEmaar（Emaar Properties） هو العالم الأكثر  شعبية  واحدة من  قبل  شركة التنمية العقارية。<br> في   الممتلكات،   ومراكز التسوق   والفنادق وتجارة التجزئة   والترفيه   في المجالات   المهنية المقبولة   ،   مع   القدرة على تطوير   تEmaar   مع دقيق   ، الجودة،   الكفاءة   الأساسية   في تشكيل   نمط الحياة   في المستقبل.
+        <br> كما   مطوري العقارات   العالمية   ،   لدينا بناء   الشرق الأوسط وشمال أفريقيا   ، أمريكا،   أوروبا   وجنوب آسيا   المشروع التاريخي   ، مع جودة   وكفاءة   معروفة.<br>
+        Emaar العقارات   مسؤولة أيضا عن   بناء   أكبر شركة في العالم   السياحية   مع   المباني الأكثر شهرة في   العالم   ،   بما في ذلك   أكبر مراكز التسوق   :   دبي مول   ،   أطول مبنى في العالم   --   هاري    (   برج خليفة .<br>
+        من خلال جعل   منطقة وسط   دبي مارينا   ،   دبي   ،   الإمارات   العربية   الكبيرة مثل   فيلا   و   مزرعة   مجتمعية شاملة   ،   Emaar   العقارات   في   الإمارات   أيضا   الرائدة في   المنطقة   في مجال العقارات   التغيير.<br>
+      </div>
+    </div>
+    <div class="col-md-7 yu_bottom">
+      <div class="col-md-3 guanyu_center">
+        <a class="guanyu_center_a1">828متر</a><br>
+        <a class="guanyu_center_a2">أطول مبنى في العالم</a><br>
+        <a class="guanyu_center_a2"> خليفة  بر</a><br>
+      </div>
+      <div class="col-md-3 guanyu_center">
+        <a class="guanyu_center_a1">8000 مليون  زائر</a><br>
+        <a class="guanyu_center_a2">كل عام لزيارة   أكبر مركز تسوق في العالم</a><br>
+        <a class="guanyu_center_a2">دبي مول</a><br>
+      </div>
+      <div class="col-md-3 guanyu_center">
+        <a class="guanyu_center_a1">48,259</a><br>
+        <a class="guanyu_center_a2">وبحلول   عام 2017   تم تسليمها</a><br>
+        <a class="guanyu_center_a2">مجموع   الوحدات   السكنية</a><br>
+      </div>
+      <div class="col-md-3 guanyu_center">
+        <a class="guanyu_center_a1">42,202</a><br>
+        <a>وبحلول   عام 2017   في   جيان</a><br>
+        <a>مجموع   الوحدات   السكنية</a><br>
+      </div>
+    </div>
+  </div>
+  <div class="index_guanyu_titile" id="maodian_xinwen">
+    <br>
+    <h2>أخبار</h2>
+    <br>
+    <a href="/ar/news_list/1" style="float: right;
+    margin-right: 29px;
+    margin-bottom: 19px;">ت>></a>
+  </div>
+  <div class="col-md-12">
+    
+    
+  {foreach name="news" item="vo"}
+    <div class="col-md-6 padding0" style="padding-right: 20px;padding-left: 20px;">
+      <div class="index_xinwen_div">
+        <div class="col-md-2 index_xinwen_div1">
+          <a class="index_xinwen_date_a1">{$vo.Ym}</a>
+          <br>
+          <a class="index_xinwen_date_a2">{$vo.d}</a>
+        </div>
+        <div class="col-md-2">
+          <img class="index_xinwen_img" src="{$vo.img}" alt="">
+        </div>
+        <div class="col-md-8 index_xinwen_div2">
+          <a class="index_xinwen_content_a1" href="/ar/news/{$vo.ns_id}" target="_blank">{$vo.ns_title}</a>
+          <br>
+          <a class="index_xinwen_content_a2" href="/ar/news/{$vo.ns_id}" target="_blank">{$vo.ns_descript}</a>
+        </div>
+      </div>
+    </div>
+   {/foreach} 
+
+
+    <div class="index_xinwen_center_div">
+      <div class="index_xinwen_center_circle">
+      </div>
+      <div class="index_xinwen_center_circle" style="margin-top: 199px;">
+      </div>
+      <div class="index_xinwen_center_circle" style="margin-top: 398px;;">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12" id="maodian_xiangmu">
+    <div class="index_shequ_titile">
+      <h2>مشاريع مجتمعية</h2>
+    </div>
+  </div>
+  <div class="col-md-12 padding0">
+    <a href="/ar/emaar_centre">
+      <img class="shequ_img_1" src="/static/www/img/index_shequ_1.png" alt="">
+    </a>
+    <a href="/ar/emaar_cloud_creek_port">
+      <img class="shequ_img_2" src="/static/www/img/index_shequ_2.png" alt="">
+    </a>
+    <a href="/ar/emaar_mountain_villa">
+      <img class="shequ_img_1" src="/static/www/img/index_shequ_3.png" alt="">
+    </a>
+    <a href="/ar/emaar_beach_vista">
+      <img class="shequ_img_2" src="/static/www/img/index_shequ_4.png" alt="">
+    </a>
+    <a href="/ar/emaar_south">
+      <img class="shequ_img_3" src="/static/www/img/index_shequ_5.png" alt="">
+    </a>
+  </div>
+  <div class="col-md-12" id="maodian_shuju">
+    <div class="index_shequ_titile" >
+      <h2>بيانات   عامة</h2>
+    </div>
+  </div>
+  <div class="col-md-12 padding0">
+    <a href="/ar/emaar_centre">
+      <img class="shuju_img_1" src="/static/www/img/index_shuju_1.png" alt="">
+    </a>
+    <a href="/ar/emaar_beach_vista">
+      <img class="shuju_img_1" src="/static/www/img/index_shuju_2.png" alt="">
+    </a>
+    <a href="/ar/emaar_cloud_creek_port">
+      <img class="shuju_img_1" src="/static/www/img/index_shuju_3.png" alt="">
+    </a>
+    <a href="/ar/emaar_mountain_villa">
+      <img class="shuju_img_1" src="/static/www/img/index_shuju_4.png" alt="">
+    </a>
+    <a href="/ar/emaar_south">
+      <img class="shuju_img_1" src="/static/www/img/index_shuju_5.png" alt="">
+    </a>
+  </div>
+  <div class="col-md-12" id="maodian_lianxi">
+    <div class="index_lianxi_titile1" style="padding-bottom: 68px;">
+      <h2>الاتصال بنا</h2>
+      <h2>الهاتف：400-000-0000</h2>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="index_lianxi_titile1" style="padding-top: 0px;">
+      <a style="font-size:24px">للاستفسار   والمعلومات <br>ونحن سوف   البريد الإلكتروني   لك   Emaar   بانتظام   إرسال   الأخبار</a>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div style="width: 584px;margin-right: auto;margin-left: auto;">
+<script language="javascript">
+function ct(hao,id)
+{    
+	$('#countryid').val(id);
+	$('#countrydaima').val(hao);
+	$('#daima').text('+'+hao);
+}
+function tj()
+{    
+	$.post("/contentus",{
+		xingming:$("#lianxi_xingming_input").val(),
+		email:$("#lianxi_xingming_email").val(),
+		countryid:$("#countryid").val(),
+		countrydaima:$("#countrydaima").val(),
+		dianhua:$("#cn_lianxi_xingming_dianhua").val(),
+		language:$("#language").val()
+	  },function(data,status){
+		switch (data.status) {
+		  case 200:
+			alert("提交成功");
+			$("#lianxi_xingming_input").val("");
+			$("#lianxi_xingming_email").val("");
+			$("#countryid").val("");
+			$("#countrydaima").val("");
+			$("#cn_lianxi_xingming_dianhua").val("");
+			break;
+		  default:
+			alert(data.message);
+		}	
+	 });	
+}
+</script>
+      <input id="lianxi_xingming_input" class="form-control index_input" placeholder="الاسم" type="text" name="" value="">
+      <input id="lianxi_xingming_email" class="form-control index_input" placeholder="صندوق البريد" type="text" name="" value="">
+      <input type="hidden" name="countryid" id="countryid" value="" />
+      <input type="hidden" name="countrydaima" id="countrydaima" value="" />
+      <input type="hidden" name="language" id="language" value="{$language}" />
+      <div class="input-group" style="margin-bottom:21px">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" id="daima" name="daima" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height: 80px;width: 130px;border-color: #333;">
+            رمز البلد <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+{foreach name="country" item="vo"}
+            <li><a onclick="ct({$vo.cou_code2},{$vo.cou_id});">+{$vo.cou_code2}</a></li>
+{/foreach} 
+          </ul>
+        </div>
+        <!-- /btn-group -->
+        <input id="cn_lianxi_xingming_dianhua" type="text" class="form-control index_input" placeholder="الهاتف"  aria-label="...">
+      </div>
+     <button type="button" class="btn btn-default index_bu" onclick="tj();">تقديم</button>
+      <!-- /input-group -->
+    </div>
+    <!-- /input-group -->
+  </div>
+  <div class="col-md-12">
+    <div class="index_shequ_titile" style="    padding-top: 70px; padding-bottom: 30px;">
+      <a style="font-size:24px">القلق   لدينا</a>
+    </div>
+  </div>
+  <div class="col-md-12 padding0" style="    text-align: center;">
+    <img  src="/static/www/img/123.png" alt="" style="width: 206px;">
+  </div>
+
+
+{include file="public/ar/ar_foot" /}
